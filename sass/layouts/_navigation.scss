@@ -1,0 +1,128 @@
+.nav{
+    display: inline-grid;
+    @include respond(tab-port){
+        display: flex;
+        justify-content: center;
+    }
+    &-item{
+        @include respond (tab-port){
+            margin: 0 4rem;
+        }
+    }
+    &-link{
+        text-decoration: none;
+        color: #292929;   
+        display: inline-block; 
+        &:hover{
+            border: none;
+            color: #292929;           
+        }
+      
+    } 
+    &-tabs &-link{        
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #808080;
+        text-transform: uppercase;
+        display: inline;
+        border:none;
+    }
+    &-tabs{
+        border: none;
+    }
+    &__mini{       
+        z-index: inherit;        
+        a{
+            text-decoration: underline;
+            color: #f6f6f6;
+            font-size: 3.5rem;                          
+        }
+        li{
+            margin-bottom: 2rem;
+        }
+      
+    }
+   
+}
+
+.nav-tabs .nav-link.active{        
+    margin-bottom: 3px;
+    border: none;
+    border-bottom: 2px solid #1dc953;
+    color: #000;
+    white-space: pre-wrap;    
+}
+.navbar{ 
+    margin: 0 0;         
+    font-size: 1.5rem;    
+    z-index: 1;
+    padding-bottom: 1rem;
+    padding: 1rem 8rem;
+    position: sticky;
+    top:0;
+    left: 0;
+    width:100%;
+    height: auto;
+    transition: all .4s;
+    font-weight: 600;
+    color: #000;   
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    @include respond(tab-land){
+        padding: 2rem 2rem;
+    }
+    &:link,&:visited{
+        color: #000;
+    }
+    &-nav{
+        z-index: 1000;
+        width: 30%;
+        display: inline-flex;       
+        align-items: center;
+        @include respond(tab-land){
+            width: 100%;
+            //font-size: 3rem; 
+            li{
+                margin: 0 0;    
+            }
+        }
+        @include respond(tab-land){
+            font-size: 3rem;
+        }
+        
+    }
+    &-brand{
+        width: 100%;
+        font-size: 4.2rem;
+        font-weight: 700;
+        text-align: center;
+        color: #292929!important;
+        @include respond(tab-land){
+            font-weight: 500;
+        }
+    }
+    &__right{       
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;                     
+    }
+    &-toggler{
+        position: absolute;
+        border: none;
+        font-size: 2.25rem;
+    }
+    @include respond(tab-land){
+        &-collapse{
+            position: absolute;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            left: 0px;
+            top: 100%;
+        }
+    }
+    
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color:none;
+}

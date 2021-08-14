@@ -1,0 +1,23 @@
+header{     
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    &__slide{                   
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        text-align:center;
+        &-1{
+            background-image: url(/img/fur-pic-4.jpg);
+        }        
+    }
+    
+}
+.header__img{
+    height:40rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;        
+    background-color: aqua;
+}

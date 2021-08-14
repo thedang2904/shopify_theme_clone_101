@@ -1,0 +1,54 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+/*reset css*/
+div,label{margin:0;padding:0;}
+body{margin:20px;}
+h1{font-size:1.5em;margin:10px;}
+/****** Style Star Rating Widget *****/
+#rating{border:none;float: left;}
+#rating>input{display:none;}/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating>label:before{margin:2px;font-size:2rem;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating>label{color:#ddd;float:left;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+// #rating>input:checked~label,
+// #rating:not(:checked)>label:hover, 
+// #rating:not(:checked)>label:hover~label{color:#3e3e3e;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+// #rating>input:checked+label:hover,
+// #rating>input:checked~label:hover,
+// #rating>label:hover~input:checked~label,
+// #rating>input:checked~label:hover~label{color:#000;}
+
+//rating enable
+#rating-enable{border:none;float: left;}
+#rating-enable>input{display:none;}/*ẩn input radio - vì chúng ta đã có label là GUI*/
+#rating-enable>label:before{margin:5px;font-size:3rem;font-family:FontAwesome;display:inline-block;content:"\f005";}/*1 ngôi sao*/
+#rating-enable>.half:before{content:"\f089";position:absolute;}/*0.5 ngôi sao*/
+#rating-enable>label{color:#ddd;float:right;}/*float:right để lật ngược các ngôi sao lại đúng theo thứ tự trong thực tế*/
+/*thêm màu cho sao đã chọn và các ngôi sao phía trước*/
+#rating-enable>input:checked~label,
+#rating-enable:not(:checked)>label:hover, 
+#rating-enable:not(:checked)>label:hover~label{color:#3e3e3e;}
+/* Hover vào các sao phía trước ngôi sao đã chọn*/
+#rating-enable>input:checked+label:hover,
+#rating-enable>input:checked~label:hover,
+#rating-enable>label:hover~input:checked~label,
+#rating-enable>input:checked~label:hover~label{color:#000;}
+
+
+.rating__section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @include respond(tab-port){
+        justify-content: center;
+    }
+}
+  
+
+.customer__review{
+    height: auto;
+    border: .5px solid rgba(#3e3e3e, $alpha: .2);
+    padding: 2rem 2rem;
+}

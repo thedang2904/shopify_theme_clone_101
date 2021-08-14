@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Competible" content="ie=edge">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown mar-right-sm w-100 d-flex justify-content-center flex-column">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center"
+                            href="/pages/collection/Product-list.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="btn__underline btn__underline-text--dark">Shop</div>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content bg-light">
+                                <div class="row">
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Living room</a></li>
+                                            <li class="item__primary"><a href="#">Lighting</a></li>
+                                            <li class="item__primary"><a href="#">Furniture</a></li>
+                                            <li class="item__primary"><a href="#">Decorative Object</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Sitting area</a></li>
+                                            <li class="item__primary"><a href="#">Furniture</a></li>
+                                            <li class="item__primary"><a href="#">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Art work</a></li>
+                                            <li class="item__primary"><a href="#">Architectural photography</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <div class="panel__blue panel__text panel__text--light">
+                                            <h3>Use Coupon Code "WinterLove" For 30% Off All Lighting.</h3>
+                                            <p>(While Supplies Last, Of Course)</p>
+                                            <div class="d-flex justify-content-center mar-top-med">
+                                                <a href="pages/collection/Product-list.html" class="btn btn__light"
+                                                    role="button">Shop all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/about.html">
+                            <div class="btn__underline btn__underline-text--dark">About</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/contact.html">
+                            <div class="btn__underline btn__underline-text--dark">Contact</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/blog.html">
+                            <div class="btn__underline btn__underline-text--dark">Blog</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="/index.html" class="navbar-brand">MDLIVING</a>
+            <div class="d-flex justify-content-end">
+                <ul class="navbar__right hidden-element">
+                    <li class="nav-item dropdown mar-right-sm">
+                        <a class="nav-link dropdown-toggle btn btn__rounded-logo btn__rounded-logo--dark dropdown-non_arrow"
+                            href="/pages/collection/Product-list.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content bg-light pad-side-xlg">
+                                <div class="row mar-bot-sm">
+                                    <div class="col-8">
+                                        <input type="text" class="input input__transparent w-100 h__4 mar-0" name=""
+                                            id="" placeholder="Enter Search Term...">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <a href="#" class="btn btn__dark w-100 h__4" role="button">Search</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider mar-bot-sm"></div>
+                                <p class="sm-text-bold f-2">Optional Search Filter</p>
+                                <div class="row mar-top-med">
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Limit Search For</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Product Vendor</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Product Type</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <a href="/login.html" class="btn btn__rounded-logo btn__rounded-logo--dark">
+                        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="/cart.html" class="btn btn__rounded-logo btn__rounded-logo--dark">
+                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </nav>
+    <div class="main__content mar-top-med">
+        <section class="product__detail">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Over_Grown_2048x.jpg?v=1495810131"
+                            alt="" class="card-img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p class="f-4 sm-text-bold">Over Grown</p>
+                    <div id="rating" class="rating__section">
+                        <div class="star__rating" id="rating">
+                            <input type="radio" name="rating" value="5" />
+                            <label class="full" title="Awesome - 5 stars"></label>
+
+                            <input type="radio" name="rating" value="4" />
+                            <label class="full" title="Pretty good - 4 stars"></label>
+
+                            <input type="radio" name="rating" value="3" />
+                            <label class="full" title="Meh - 3 stars"></label>
+
+                            <input type="radio" name="rating" value="2" />
+                            <label class="full" title="Kinda bad - 2 stars"></label>
+
+                            <input type="radio" name="rating" value="1" />
+                            <label class="full" title="Sucks big time - 1 star"></label>
+                        </div>
+                        <p class="f-1 sm-text mar-0">1 review</p>
+                    </div>
+                    <p class="f-3 product__price">$400.00</p>
+                    <p class="sm-text sm-text-bold f-1">QUANTITY</p>
+                    <div class="quantity buttons_added d-flex flex-row">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                            name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                            inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                    <div class="pad-right-xlg">
+                        <a href="#" class="btn btn__blue mar-0">Add to cart</a>
+                        <a href="#" class="btn btn__dark mar-0">Buy it now</a>
+                    </div>
+
+                    <p class="sm-text-bold mar-top-med">Social Sharing</p>
+                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark">
+                        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                    </a>
+                    <div class="container">
+                        <ul class="nav nav-tabs d-flex">
+                            <li class="nav-item mar-right-med">
+                                <a class="pad-0 nav-link active" data-toggle="tab" href="#home">DESCRIPTION</a>
+                            </li>
+                            <li class="nav-item mar-right-med">
+                                <a class="pad-0 nav-link" data-toggle="tab" href="#menu1">SHIPPING</a>
+                            </li>
+                            <li class="nav-item mar-right-med">
+                                <a class="pad-0 nav-link" data-toggle="tab" href="#menu2">RETURN POLICY</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pad-top-bot-md w-100 align-text-left">
+                            <div id="home" class="tab-pane fade in active show">
+                                <p class="sm-text">This is a demonstration store. Images were licensed through <a
+                                        href="#">Unsplashed</a></p>
+                                <p class="sm-text">If you've been hunting for a new addition to your home, it's here.
+                                    Designed to
+                                    beautifully fit any space it's in, and guaranteed to be the highlight in your home.
+                                </p>
+                                <p class="sm-text-bold">Products highlights</p>
+                                <ul>
+                                    <li class="sm-text" style="display:list-item; list-style:disc">Created by
+                                        independent designers</li>
+                                    <li class="sm-text" style="display:list-item; list-style:disc">Includes a 90 day
+                                        warranty</li>
+                                    <li class="sm-text" style="display:list-item; list-style:disc">Optional white-glove
+                                        delivery</li>
+                                    <li class="sm-text" style="display:list-item; list-style:disc">Crafted in Nashville
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="menu1" class="tab-pane fade">
+                                <p class="sm-text">All products are shipped two-day ground, with optional white-glove
+                                    delivery. To arrange white-glove delivery, please include your phone number in the
+                                    order notes section, and specify your interest in coordinating this free add-on</p>
+                                <p class="sm-text">Our products are only shipped within the United States. </p>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <p class="sm-text">Orders may be returned within 90 days of purchase if unopened, unless
+                                    you've arranged to have used or damaged pieces return to our customer support.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <div class="comment-section">
+            <div class="customer__review">
+                <div class="row">
+                    <div class="col">
+                        <p class="sm-text-bold f-3">
+                            Customer review
+                        </p>
+                        <div id="rating-enable" class="rating__section justify-content-start">
+                            <div class="star__rating" id="rating-enable">
+                                <input type="radio" id="star5" name="rating" value="5" />
+                                <label class="full" for="star5" title="Awesome - 5 stars"></label>
+
+                                <input type="radio" id="star4" name="rating" value="4" />
+                                <label class="full" for="star4" title="Pretty good - 4 stars"></label>
+
+                                <input type="radio" id="star3" name="rating" value="3" />
+                                <label class="full" for="star3" title="Meh - 3 stars"></label>
+
+                                <input type="radio" id="star2" name="rating" value="2" />
+                                <label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                                <input type="radio" id="star1" name="rating" value="1" />
+                                <label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                            </div>
+                            <p class="f-2 sm-text mar-0">based on 1 review</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+            </div>
+        </div>
+        <section class="section__product-hightlight wow slideInLeft" data-wow-duration="1s">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 product__infor"
+                        style="background-image:url(//cdn.shopify.com/s/files/1/1957/8315/files/product-image-1_720x.jpg?v=1493679458);background-size: cover;">
+                    </div>
+                    <div class="col-md-6 panel panel__light">
+                        <div class="panel__text panel__text--dark">
+                            <h1>Crafted in Nashville</h1>
+                            <p>All of our products are lovingly crafted in Nashville and shipped directly to you. We
+                                take pride in our craft, and each piece that leaves our warehouse goes through a 100
+                                point quality assurance check, making sure you get the value you’ve paid for.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__product-hightlight wow slideInLeft" data-wow-duration="1s">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 product__infor"
+                        style="background-image:url(//cdn.shopify.com/s/files/1/1957/8315/files/product-image-2_720x.jpg?v=149367944);background-size: cover;">
+                    </div>
+                    <div class="col-md-6 panel panel__light">
+                        <div class="panel__text panel__text--dark">
+                            <h1>90 day guarantee</h1>
+                            <p>Anything you purchase from us comes with our 90 Day Guarantee. If you’re not satisfied
+                                with your purchase, we’ll return your money and pay to have it shipped back. That’s a
+                                promise you should be able to get comfy with.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section__feature wow fadeInUp" data-wow-duration="1s">
+            <div class="d-flex justify-content-cente mar-bot-md">
+                <p class="sm-text-bold f-4">Others fine product</p>
+            </div>
+
+            <div class="container-fluid hidden-element">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top mar-bot-sm"
+                                src="//cdn.shopify.com/s/files/1/1957/8315/products/33_2048x.jpg?v=1495810105"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="card-text product__name sm-text">33</a>
+                                <p class="product__price sm-text-bold">$190.00</p>
+                                <a class="card-text product__price sm-text" href="#">Quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top mar-bot-sm"
+                                src="//cdn.shopify.com/s/files/1/1957/8315/products/Delicate_Structure_2048x.jpg?v=1495810082"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="card-text product__name sm-text">Delicate Structure</a>
+                                <p class="product__price sm-text-bold">$350.00</p>
+                                <a class="card-text product__price sm-text" href="#">Quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top mar-bot-sm"
+                                src="//cdn.shopify.com/s/files/1/1957/8315/products/Delicate_Structure_2_2048x.jpg?v=1495810055"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="card-text product__name sm-text">Delicate Structure #2</a>
+                                <p class="product__price sm-text-bold">$350.00</p>
+                                <a class="card-text product__price sm-text" href="#">Quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top mar-bot-sm"
+                                src="//cdn.shopify.com/s/files/1/1957/8315/products/Portal_2048x.jpg?v=1495810026"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="card-text product__name sm-text">Portal</a>
+                                <p class="product__price sm-text-bold">$650.00</p>
+                                <a class="card-text product__price sm-text" href="#">Quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top mar-bot-sm"
+                                src="//cdn.shopify.com/s/files/1/1957/8315/products/Sharp_Edges_2048x.jpg?v=1495809980"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <a href="#" class="card-text product__name sm-text">Sharp Edges</a>
+                                <p class="product__price sm-text-bold">$300.00</p>
+                                <a class="card-text product__price sm-text" href="#">Quick view</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="mobile__element">
+                    <!--Carousel Wrapper-->
+                    <div id="carousel-example-1z" class="carousel slide carousel-slide pointer-event"
+                        data-ride="carousel" data-interval="3000">
+                        <!--Indicators-->
+                        <ol class="carousel-indicators carousel-indicators-dark">
+                            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+                        </ol>
+                        <!--/.Indicators-->
+                        <!--Slides-->
+                        <div class="carousel-inner" role="listbox">
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="//cdn.shopify.com/s/files/1/1957/8315/products/33_720x.jpg?v=1495810105"
+                                        class="card-img-top itest itest-20" alt="...">
+                                    <div class="card-body">
+                                        <a href="/pages/products/Product-infor.html"
+                                            class="card-text product__name">33</a>
+                                        <p class="product__price">$189.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/First slide-->
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Delicate_Structure_720x.jpg?v=1495810082"
+                                        class="card-img-top itest itest-20" alt="...">
+                                    <div class="card-body">
+                                        <a href="/pages/products/Product-infor.html"
+                                            class="card-text product__name">Delicate Structure #1</a>
+                                        <p class="product__price">$350.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Second slide-->
+
+                            <!--Third slide-->
+                            <div class="carousel-item">
+                                <div class="card product__soldout">
+                                    <div class="product__badge product__badge--soldout">
+                                        <p>Sold out</p>
+                                    </div>
+                                    <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Delicate_Structure_2_720x.jpg?v=1495810055"
+                                        class="card-img-top itest itest-20" alt="...">
+                                    <div class="card-body">
+                                        <a href="/pages/products/Product-infor.html"
+                                            class="card-text product__name">Delicate Structure #2</a>
+                                        <p class="product__price">$219.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Third slide-->
+
+                            <!--Fourth slide-->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="product__badge product__badge--sale">
+                                        <p>Sale</p>
+                                    </div>
+                                    <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Portal_720x.jpg?v=1495810026"
+                                        class="card-img-top itest itest-20" alt="...">
+                                    <div class="card-body">
+                                        <a href="/pages/products/Product-infor.html"
+                                            class="card-text product__name">Portal</a>
+                                        <p class="product__price">$250.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Fourth slide-->
+
+                            <!--Fifth slide-->
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="product__badge product__badge--sale">
+                                        <p>Sale</p>
+                                    </div>
+                                    <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Sharp_Edges_720x.jpg?v=1495809980"
+                                        class="card-img-top itest itest-20" alt="...">
+                                    <div class="card-body">
+                                        <a href="/pages/products/Product-infor.html"
+                                            class="card-text product__name">Sharp Edge</a>
+                                        <p class="product__price">$300.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Fifth slide-->
+                        </div>
+                        <!--/.Slides-->
+                        <!--Controls-->
+                        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!--/.Controls-->
+                    </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer__main-content">
+                <h1 class="footer__logo">MDLiving</h1>
+                <ul class="footer__nav">
+                    <li class="footer__nav--items"><a href="#" class="">Shop</a></li>
+                    <li class="footer__nav--items"><a href="#" class="">About</a></li>
+                    <li class="footer__nav--items"><a href="/contact.html" class="">Contact</a></li>
+                    <li class="footer__nav--items"><a href="#" class="">Blog</a></li>
+                </ul>
+                <div class="footer__logo-social">
+                    <ul class="mar-bot-md">
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="social__logo">
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-visa" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-discover" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-amex" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-paypal" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>Designed by Trailblaze Media. Powered by Shopify </p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>© 2019 MDLiving.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../../js/jquery.paroller.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

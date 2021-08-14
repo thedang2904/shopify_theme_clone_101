@@ -1,0 +1,64 @@
+.text-layer{
+    &--light{
+        background-color: #ffffff;
+        a{
+            font-size: 3rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #000;        
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        &:hover{
+            opacity: .8;
+            color: #000;
+        }
+    }
+
+    &--blue{
+        font-size: 4rem;
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        background-color: #2b9fcd;
+        a{
+            font-size: 3rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;        
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        &:hover{
+            opacity: .8;
+            color: #fff;
+        }
+    }
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    opacity: 0;
+    color:transparent;
+    text-align: center;
+    transition: all .8s;
+    padding: 2rem 3rem;
+    &:hover{
+        opacity: .8;    
+    }
+    a{
+        font-size: 3rem;
+        font-weight: 700;
+        text-decoration: none;               
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }   
+}

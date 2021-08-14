@@ -1,0 +1,20 @@
+
+html{
+    font-size: 58.5%;
+    @include respond(tab-land){
+        font-size: 53% !important; 
+    }  
+    @include respond(tab-port){
+        font-size: 48% !important;
+    }
+    @include respond(phone){
+        font-size: 45% !important;
+    }
+}
+
+body{
+    padding:0 0;
+    background-color: #f6f6f6;
+    margin: 0 !important; 
+}
+

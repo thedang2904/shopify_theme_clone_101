@@ -1,0 +1,19 @@
+.page-link{
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    &:hover{
+        background-color: transparent;
+        color: #2b9fcd;
+    }      
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #2b9fcd;
+    background-color: transparent;
+    border: none;
+}  
+
+.page-item.disabled .page-link{
+    display: none;
+}

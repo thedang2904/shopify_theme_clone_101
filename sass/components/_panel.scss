@@ -1,0 +1,44 @@
+.panel{
+    padding: 1rem 3rem;
+    height: 100%;         
+    
+    &__text{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;                 
+        padding: 2rem 3rem;  
+        h1{
+            width: 90%;
+            font-size: 4.5rem;
+            font-weight: 700;
+        }
+        h2{
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        h3{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+        &--light{
+            color: #fff;
+        }
+        &--dark{
+            color: #2e2e2e;
+        }
+    }
+
+    &__blue{                
+        background-color:#2b9fcd;
+    }
+    &__light{
+        background-color: #fff;       
+    }
+}

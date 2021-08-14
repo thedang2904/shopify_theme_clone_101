@@ -1,0 +1,25 @@
+.promo__text{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    h1{
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+   
+}
+.promo{
+    top: 5%;
+    padding: 5rem 8rem;
+    height: 50rem;
+    width: 100%;
+    background-color:#2b9fcd;
+}

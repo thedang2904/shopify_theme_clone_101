@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Competible" content="ie=edge">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown mar-right-sm w-100 d-flex justify-content-center flex-column">
+                        <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center"
+                            href="/pages/collection/Product-list.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="btn__underline btn__underline-text--dark">Shop</div>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content bg-light">
+                                <div class="row">
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Living room</a></li>
+                                            <li class="item__primary"><a href="#">Lighting</a></li>
+                                            <li class="item__primary"><a href="#">Furniture</a></li>
+                                            <li class="item__primary"><a href="#">Decorative Object</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Sitting area</a></li>
+                                            <li class="item__primary"><a href="#">Furniture</a></li>
+                                            <li class="item__primary"><a href="#">Accessories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <ul>
+                                            <li class="caption__tertiary"><a href="#">Art work</a></li>
+                                            <li class="item__primary"><a href="#">Architectural photography</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mar-bot-sm">
+                                        <div class="panel__blue panel__text panel__text--light">
+                                            <h3>Use Coupon Code "WinterLove" For 30% Off All Lighting.</h3>
+                                            <p>(While Supplies Last, Of Course)</p>
+                                            <div class="d-flex justify-content-center mar-top-med">
+                                                <a href="pages/collection/Product-list.html" class="btn btn__light"
+                                                    role="button">Shop all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/about.html">
+                            <div class="btn__underline btn__underline-text--dark">About</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/contact.html">
+                            <div class="btn__underline btn__underline-text--dark">Contact</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mar-right-sm">
+                        <a class="nav-link" href="/blog.html">
+                            <div class="btn__underline btn__underline-text--dark">Blog</div><span
+                                class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <a href="/index.html" class="navbar-brand">MDLIVING</a>
+            <div class="d-flex justify-content-end">
+                <ul class="navbar__right hidden-element">
+                    <li class="nav-item dropdown mar-right-sm">
+                        <a class="nav-link dropdown-toggle btn btn__rounded-logo btn__rounded-logo--dark dropdown-non_arrow"
+                            href="/pages/collection/Product-list.html" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-content bg-light pad-side-xlg">
+                                <div class="row mar-bot-sm">
+                                    <div class="col-8">
+                                        <input type="text" class="input input__transparent w-100 h__4 mar-0" name=""
+                                            id="" placeholder="Enter Search Term...">
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <a href="#" class="btn btn__dark w-100 h__4" role="button">Search</a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-divider mar-bot-sm"></div>
+                                <p class="sm-text-bold f-2">Optional Search Filter</p>
+                                <div class="row mar-top-med">
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Limit Search For</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Product Vendor</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p class="sm-text f-2">Product Type</p>
+                                        <select class="d-inline f-2 align-left mar-right-med">
+                                            <option>Featured</option>
+                                            <option>Best Selling</option>
+                                            <option>Alphabetically,A-Z</option>
+                                            <option>Alphabetically,Z-A</option>
+                                            <option>Price,low to high</option>
+                                            <option>Price, high to low</option>
+                                            <option>Date, old to new</option>
+                                            <option>Date, new to old</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+                    <a href="/login.html" class="btn btn__rounded-logo btn__rounded-logo--dark">
+                        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="/cart.html" class="btn btn__rounded-logo btn__rounded-logo--dark">
+                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </nav>
+    <div class="main__content">
+
+
+        <div class="header__img"
+            style="background-image: url(https://cdn.shopify.com/s/files/1/1957/8315/collections/Decorative_Objects_1728x.jpg?v=1495806990)">
+        </div>
+        <div class="panel__text border__dark pad-top-bot-md mar-bot-sm">
+            <h2 class="mar-bot-md">
+                Decorative Objects
+            </h2>
+            <p class="sm-text">Small accents and touches for any room in your home.</p>
+            <div class="align-center w-100 d-inline mar-top-lg">
+                <p class="sm-text-bold d-inline mar-right-sm">Sort by</p>
+                <select class="form-control d-inline f-1 align-left mar-right-med">
+                    <option>Featured</option>
+                    <option>Best Selling</option>
+                    <option>Alphabetically,A-Z</option>
+                    <option>Alphabetically,Z-A</option>
+                    <option>Price,low to high</option>
+                    <option>Price, high to low</option>
+                    <option>Date, old to new</option>
+                    <option>Date, new to old</option>
+
+                </select>
+
+                <p class="sm-text-bold d-inline mar-right-sm">Sort by</p>
+                <select class="form-control d-inline f-1 align-left">
+                    <option>All</option>
+                    <option>Landscape</option>
+                    <option>Photography</option>
+                    <option>Texture</option>
+
+                </select>
+            </div>
+        </div>
+
+
+        <section class="section__feature wow fadeInUp" data-wow-duration="1s">
+            <div class="container-fluid">
+                <div class="row mar-bot-sm">
+                    <div class="col-4 col-sm">
+                        <div class="card w-80">
+                            <div class="product__badge product__badge--sale">
+                                <p>Sale</p>
+                            </div>
+                            <a href="/pages/products/Product-infor.html">
+                                <img class="card-img-top itest itest-30"
+                                    src="//cdn.shopify.com/s/files/1/1957/8315/products/Pillow_2048x.jpg?v=1493669021"
+                                    alt="Card image cap">
+                            </a>
+
+                            <div class="card-body">
+                                <a href="/pages/products/Product-infor.html" class="card-text product__name sm-text">The
+                                    Pillow You've Always Wanted</a>
+                                <p class="product__price sm-text-bold">On Sale From $64.00</p>
+                                <a class="card-text product__price hidden-element" href="#" data-toggle="modal"
+                                    data-target="#modalLoginForm">Quick view</a>
+                                <!--modal form quick view-->
+                                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="row">
+                                                <div class="col-7 mar-right-sm">
+                                                    <div class="card pad-med">
+                                                        <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Over_Grown_2048x.jpg?v=1495810131"
+                                                            alt="" class="card-img">
+                                                    </div>
+                                                </div>
+                                                <div class="col text-left pad-top-bot-md">
+                                                    <p class="f-4 sm-text-bold">Over Grown</p>
+                                                    <div class="review-section">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        1 review
+                                                    </div>
+                                                    <p class="f-3 product__price">$400.00</p>
+                                                    <p class="sm-text sm-text-bold">QUANTITY</p>
+                                                    <div class="pad-right-xlg">
+                                                        <a href="#" class="btn btn__blue mar-0">Add to cart</a>
+                                                        <a href="#" class="btn btn__dark mar-0">Buy it now</a>
+                                                    </div>
+
+                                                    <p class="sm-text-bold mar-top-med">Social Sharing</p>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark">
+                                                        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <div class="container">
+                                                        <ul class="nav nav-tabs d-flex">
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link active" data-toggle="tab"
+                                                                    href="#home">DESCRIPTION</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu1">SHIPPING</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu2">RETURN POLICY</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content pad-top-bot-md w-100">
+                                                            <div id="home" class="tab-pane fade in active show">
+                                                                <p class="sm-text">This is a demonstration store. Images
+                                                                    were licensed through <a href="#">Unsplashed</a></p>
+                                                                <p class="sm-text">If you've been hunting for a new
+                                                                    addition to your home, it's here.
+                                                                    Designed to
+                                                                    beautifully fit any space it's in, and guaranteed to
+                                                                    be the highlight in your home.
+                                                                </p>
+                                                                <p class="sm-text-bold">Products highlights</p>
+                                                                <ul>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Created by
+                                                                        independent designers</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Includes a 90 day
+                                                                        warranty</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Optional white-glove
+                                                                        delivery</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Crafted in Nashville
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div id="menu1" class="tab-pane fade">
+                                                                <p class="sm-text">All products are shipped two-day
+                                                                    ground, with optional white-glove
+                                                                    delivery. To arrange white-glove delivery, please
+                                                                    include your phone number in the
+                                                                    order notes section, and specify your interest in
+                                                                    coordinating this free add-on</p>
+                                                                <p class="sm-text">Our products are only shipped within
+                                                                    the United States. </p>
+                                                            </div>
+                                                            <div id="menu2" class="tab-pane fade">
+                                                                <p class="sm-text">Orders may be returned within 90 days
+                                                                    of purchase if unopened, unless
+                                                                    you've arranged to have used or damaged pieces
+                                                                    return to our customer support.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="product__badge product__badge--sale">
+                                <p>Sale</p>
+                            </div>
+                            <a href="/pages/products/Product-infor.html">
+                                <img class="card-img-top itest itest-30"
+                                    src="//cdn.shopify.com/s/files/1/1957/8315/products/Spike_2048x.jpg?v=1500870766 "
+                                    alt="Card image cap">
+                            </a>
+
+                            <div class="card-body">
+                                <a href="/pages/products/Product-infor.html"
+                                    class="card-text product__name sm-text">Cheeky Plant</a>
+                                <p class="product__price sm-text-bold">$15.00</p>
+                                <a class="card-text product__price hidden-element" href="#" data-toggle="modal"
+                                    data-target="#modalLoginForm">Quick view</a>
+                                <!--modal form quick view-->
+                                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="row">
+                                                <div class="col-7 mar-right-sm">
+                                                    <div class="card pad-med">
+                                                        <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Over_Grown_2048x.jpg?v=1495810131"
+                                                            alt="" class="card-img">
+                                                    </div>
+                                                </div>
+                                                <div class="col text-left pad-top-bot-md">
+                                                    <p class="f-4 sm-text-bold">Over Grown</p>
+                                                    <div class="review-section">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        1 review
+                                                    </div>
+                                                    <p class="f-3 product__price">$400.00</p>
+                                                    <p class="sm-text sm-text-bold">QUANTITY</p>
+                                                    <div class="pad-right-xlg">
+                                                        <a href="#" class="btn btn__blue mar-0">Add to cart</a>
+                                                        <a href="#" class="btn btn__dark mar-0">Buy it now</a>
+                                                    </div>
+
+                                                    <p class="sm-text-bold mar-top-med">Social Sharing</p>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark">
+                                                        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <div class="container">
+                                                        <ul class="nav nav-tabs d-flex">
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link active" data-toggle="tab"
+                                                                    href="#home">DESCRIPTION</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu1">SHIPPING</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu2">RETURN POLICY</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content pad-top-bot-md w-100">
+                                                            <div id="home" class="tab-pane fade in active show">
+                                                                <p class="sm-text">This is a demonstration store. Images
+                                                                    were licensed through <a href="#">Unsplashed</a></p>
+                                                                <p class="sm-text">If you've been hunting for a new
+                                                                    addition to your home, it's here.
+                                                                    Designed to
+                                                                    beautifully fit any space it's in, and guaranteed to
+                                                                    be the highlight in your home.
+                                                                </p>
+                                                                <p class="sm-text-bold">Products highlights</p>
+                                                                <ul>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Created by
+                                                                        independent designers</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Includes a 90 day
+                                                                        warranty</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Optional white-glove
+                                                                        delivery</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Crafted in Nashville
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div id="menu1" class="tab-pane fade">
+                                                                <p class="sm-text">All products are shipped two-day
+                                                                    ground, with optional white-glove
+                                                                    delivery. To arrange white-glove delivery, please
+                                                                    include your phone number in the
+                                                                    order notes section, and specify your interest in
+                                                                    coordinating this free add-on</p>
+                                                                <p class="sm-text">Our products are only shipped within
+                                                                    the United States. </p>
+                                                            </div>
+                                                            <div id="menu2" class="tab-pane fade">
+                                                                <p class="sm-text">Orders may be returned within 90 days
+                                                                    of purchase if unopened, unless
+                                                                    you've arranged to have used or damaged pieces
+                                                                    return to our customer support.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="/pages/products/Product-infor.html">
+                                <img class="card-img-top itest itest-30"
+                                    src="//cdn.shopify.com/s/files/1/1957/8315/products/AdobeStock_77187806_2048x.jpg?v=1493668999"
+                                    alt="Card image cap"></a>
+
+                            <div class="card-body">
+                                <a href="/pages/products/Product-infor.html"
+                                    class="card-text product__name sm-text">Wall Antler</a>
+                                <p class="product__price sm-text-bold">$350.00</p>
+                                <a class="card-text product__price hidden-element" href="#" data-toggle="modal"
+                                    data-target="#modalLoginForm">Quick view</a>
+                                <!--modal form quick view-->
+                                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="row">
+                                                <div class="col-7 mar-right-sm">
+                                                    <div class="card pad-med">
+                                                        <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Over_Grown_2048x.jpg?v=1495810131"
+                                                            alt="" class="card-img">
+                                                    </div>
+                                                </div>
+                                                <div class="col text-left pad-top-bot-md">
+                                                    <p class="f-4 sm-text-bold">Over Grown</p>
+                                                    <div class="review-section">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        1 review
+                                                    </div>
+                                                    <p class="f-3 product__price">$400.00</p>
+                                                    <p class="sm-text sm-text-bold">QUANTITY</p>
+                                                    <div class="pad-right-xlg">
+                                                        <a href="#" class="btn btn__blue mar-0">Add to cart</a>
+                                                        <a href="#" class="btn btn__dark mar-0">Buy it now</a>
+                                                    </div>
+
+                                                    <p class="sm-text-bold mar-top-med">Social Sharing</p>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark">
+                                                        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <div class="container">
+                                                        <ul class="nav nav-tabs d-flex">
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link active" data-toggle="tab"
+                                                                    href="#home">DESCRIPTION</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu1">SHIPPING</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu2">RETURN POLICY</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content pad-top-bot-md w-100">
+                                                            <div id="home" class="tab-pane fade in active show">
+                                                                <p class="sm-text">This is a demonstration store. Images
+                                                                    were licensed through <a href="#">Unsplashed</a></p>
+                                                                <p class="sm-text">If you've been hunting for a new
+                                                                    addition to your home, it's here.
+                                                                    Designed to
+                                                                    beautifully fit any space it's in, and guaranteed to
+                                                                    be the highlight in your home.
+                                                                </p>
+                                                                <p class="sm-text-bold">Products highlights</p>
+                                                                <ul>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Created by
+                                                                        independent designers</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Includes a 90 day
+                                                                        warranty</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Optional white-glove
+                                                                        delivery</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Crafted in Nashville
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div id="menu1" class="tab-pane fade">
+                                                                <p class="sm-text">All products are shipped two-day
+                                                                    ground, with optional white-glove
+                                                                    delivery. To arrange white-glove delivery, please
+                                                                    include your phone number in the
+                                                                    order notes section, and specify your interest in
+                                                                    coordinating this free add-on</p>
+                                                                <p class="sm-text">Our products are only shipped within
+                                                                    the United States. </p>
+                                                            </div>
+                                                            <div id="menu2" class="tab-pane fade">
+                                                                <p class="sm-text">Orders may be returned within 90 days
+                                                                    of purchase if unopened, unless
+                                                                    you've arranged to have used or damaged pieces
+                                                                    return to our customer support.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <a href="/pages/products/Product-infor.html">
+                                <img class="card-img-top itest"
+                                    src="//cdn.shopify.com/s/files/1/1957/8315/products/bigstock-Metal-Basket-Of-Firewood-128118995_1_2048x.jpg?v=1493668998 "
+                                    alt="Card image cap"></a>
+
+                            <div class="card-body">
+                                <a href="/pages/products/Product-infor.html"
+                                    class="card-text product__name sm-text">Stack o Wood</a>
+                                <p class="product__price sm-text-bold">$49.00</p>
+                                <a class="card-text product__price hidden-element" href="#" data-toggle="modal"
+                                    data-target="#modalLoginForm">Quick view</a>
+                                <!--modal form quick view-->
+                                <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+
+                                            <div class="row">
+                                                <div class="col-7 mar-right-sm">
+                                                    <div class="card pad-med">
+                                                        <img src="//cdn.shopify.com/s/files/1/1957/8315/products/Over_Grown_2048x.jpg?v=1495810131"
+                                                            alt="" class="card-img">
+                                                    </div>
+                                                </div>
+                                                <div class="col text-left pad-top-bot-md">
+                                                    <p class="f-4 sm-text-bold">Over Grown</p>
+                                                    <div class="review-section">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        1 review
+                                                    </div>
+                                                    <p class="f-3 product__price">$400.00</p>
+                                                    <p class="sm-text sm-text-bold">QUANTITY</p>
+                                                    <div class="pad-right-xlg">
+                                                        <a href="#" class="btn btn__blue mar-0">Add to cart</a>
+                                                        <a href="#" class="btn btn__dark mar-0">Buy it now</a>
+                                                    </div>
+
+                                                    <p class="sm-text-bold mar-top-med">Social Sharing</p>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark mar-0">
+                                                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <a href="#" class="btn__rounded-logo btn__rounded-logo--dark">
+                                                        <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                                                    </a>
+                                                    <div class="container">
+                                                        <ul class="nav nav-tabs d-flex">
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link active" data-toggle="tab"
+                                                                    href="#home">DESCRIPTION</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu1">SHIPPING</a>
+                                                            </li>
+                                                            <li class="nav-item mar-right-med">
+                                                                <a class="pad-0 nav-link" data-toggle="tab"
+                                                                    href="#menu2">RETURN POLICY</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="tab-content pad-top-bot-md w-100">
+                                                            <div id="home" class="tab-pane fade in active show">
+                                                                <p class="sm-text">This is a demonstration store. Images
+                                                                    were licensed through <a href="#">Unsplashed</a></p>
+                                                                <p class="sm-text">If you've been hunting for a new
+                                                                    addition to your home, it's here.
+                                                                    Designed to
+                                                                    beautifully fit any space it's in, and guaranteed to
+                                                                    be the highlight in your home.
+                                                                </p>
+                                                                <p class="sm-text-bold">Products highlights</p>
+                                                                <ul>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Created by
+                                                                        independent designers</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Includes a 90 day
+                                                                        warranty</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Optional white-glove
+                                                                        delivery</li>
+                                                                    <li class="sm-text"
+                                                                        style="display:list-item; list-style:disc">
+                                                                        Crafted in Nashville
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div id="menu1" class="tab-pane fade">
+                                                                <p class="sm-text">All products are shipped two-day
+                                                                    ground, with optional white-glove
+                                                                    delivery. To arrange white-glove delivery, please
+                                                                    include your phone number in the
+                                                                    order notes section, and specify your interest in
+                                                                    coordinating this free add-on</p>
+                                                                <p class="sm-text">Our products are only shipped within
+                                                                    the United States. </p>
+                                                            </div>
+                                                            <div id="menu2" class="tab-pane fade">
+                                                                <p class="sm-text">Orders may be returned within 90 days
+                                                                    of purchase if unopened, unless
+                                                                    you've arranged to have used or damaged pieces
+                                                                    return to our customer support.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer__main-content">
+                <h1 class="footer__logo">MDLiving</h1>
+                <ul class="footer__nav">
+                    <li class="footer__nav--items"><a href="#" class="">Shop</a></li>
+                    <li class="footer__nav--items"><a href="#" class="">About</a></li>
+                    <li class="footer__nav--items"><a href="/contact.html" class="">Contact</a></li>
+                    <li class="footer__nav--items"><a href="#" class="">Blog</a></li>
+                </ul>
+                <div class="footer__logo-social">
+                    <ul class="mar-bot-md">
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-youtube" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#" class="btn__rounded-logo btn__rounded-logo--light">
+                            <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                    <ul class="social__logo">
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-visa" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-discover" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-amex" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-paypal" aria-hidden="true"></i></li>
+                        </span>
+                        <span href="#" class="btn__payment">
+                            <li><i class="fa fa-cc-diners-club" aria-hidden="true"></i></li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>Designed by Trailblaze Media. Powered by Shopify </p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>© 2019 MDLiving.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../../js/jquery.paroller.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>
